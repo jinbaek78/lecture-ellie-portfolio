@@ -489,6 +489,8 @@ button:focus {
 
   #home {
     padding-bottom: 3rem;
+    background-color: var(--color-primary);
+    transition: opacity 300ms ease-in;
   }
 
   .home__title {
