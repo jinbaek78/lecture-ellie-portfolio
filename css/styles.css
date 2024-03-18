@@ -424,6 +424,7 @@ button:focus {
 
 /* Arrow-up */
 .arrow-up {
+  display: none;
   background-color: var(--color-primary);
   position: fixed;
   bottom: 3rem;
@@ -434,6 +435,9 @@ button:focus {
   border-radius: 100%;
   text-align: center;
   box-shadow: 5px 5px 0px 0px var(--color-accent);
+}
+.arrow-up--show {
+  display: block;
 }
 .fa-arrow-up {
   color: white;
@@ -539,5 +543,10 @@ button:focus {
     height: 3rem;
     bottom: 1.5rem;
     right: 1.5rem;
+    display: none;
+  }
+
+  .arrow-up--show {
+    display: none;
   }
 }
