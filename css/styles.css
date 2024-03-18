@@ -121,6 +121,10 @@ button:focus {
 .header__menu__item.active {
   border: 1px solid var(--color-accent);
 }
+
+.header--transparnt {
+  background-color: transparent;
+}
 /* home */
 #home {
   background-color: var(--color-primary);
