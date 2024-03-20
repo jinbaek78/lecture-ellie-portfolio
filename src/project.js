@@ -18,15 +18,17 @@ categories.addEventListener('click', (event) => {
   event.target.classList.add('category--selected');
 
   // project filtering
-  projects.forEach((project) => {
-    if (filter === 'all' || filter === project.dataset.type) {
-      project.style.display = 'block';
-    } else {
-      project.style.display = 'none';
-    }
-  });
+  projectsContainer.classList.add('anim-out');
+
   setTimeout(() => {
+    projects.forEach((project) => {
+      if (filter === 'all' || filter === project.dataset.type) {
+        project.style.display = 'block';
+      } else {
+        project.style.display = 'none';
+      }
+    });
+
     projectsContainer.classList.remove('anim-out');
   }, 250);
-  projectsContainer.classList.add('anim-out');
 });
