@@ -12,12 +12,17 @@ categories.addEventListener('click', (event) => {
     return;
   }
 
-  // re-set active menu
+  handleActiveSelection(event.target);
+  filterProjects(filter);
+});
+
+function handleActiveSelection(target) {
   const active = document.querySelector('.category--selected');
   active.classList.remove('category--selected');
-  event.target.classList.add('category--selected');
+  target.classList.add('category--selected');
+}
 
-  // project filtering
+function filterProjects(filter) {
   projectsContainer.classList.add('anim-out');
 
   setTimeout(() => {
@@ -31,4 +36,4 @@ categories.addEventListener('click', (event) => {
 
     projectsContainer.classList.remove('anim-out');
   }, 250);
-});
+}
