@@ -77,6 +77,11 @@ button:focus {
   margin: 0.5rem 0;
 }
 
+/* scroll-behavior */
+* {
+  /* scroll-behavior: smooth; */
+}
+
 /* Header */
 .header {
   background-color: transparent;
@@ -130,6 +135,8 @@ button:focus {
   display: block;
   padding: 8px 16px;
   border-bottom: 1px solid transparent;
+  color: var(--color-white);
+  text-decoration: none;
 }
 
 .header__menu__item:hover {

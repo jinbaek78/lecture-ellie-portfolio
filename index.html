@@ -30,8 +30,10 @@
     <!-- JS -->
     <script type="module" src="/src/main.js" defer></script>
     <script type="module" src="/src/project.js" defer></script>
+    <script type="module" src="/src/scrolling.js" defer></script>
+    <script type="module" src="/src/observer.js" defer></script>
   </head>
-  <body>
+  <body class="scroll-container">
     <!-- Header -->
     <header class="header">
       <div class="header__logo">
@@ -40,15 +42,62 @@
       </div>
       <nav class="header__nav">
         <ul class="header__menu">
-          <li><a class="header__menu__item active" href="#home">Home</a></li>
-          <li><a class="header__menu__item" href="#about">About</a></li>
-          <li><a class="header__menu__item" href="#skills">Skills</a></li>
-          <li><a class="header__menu__item" href="#work">My work</a></li>
           <li>
-            <a class="header__menu__item" href="#testimonial">Testimonial</a>
+            <div class="header__menu__item active" data-item="home">Home</div>
           </li>
-          <li><a class="header__menu__item" href="#contact">Contact</a></li>
+          <li>
+            <div class="header__menu__item" data-item="about">About</div>
+          </li>
+          <li>
+            <div class="header__menu__item" data-item="skills">Skills</div>
+          </li>
+          <li>
+            <div class="header__menu__item" data-item="work">My work</div>
+          </li>
+          <li>
+            <div class="header__menu__item" data-item="testimonial">
+              Testimonial
+            </div>
+          </li>
+          <li>
+            <div class="header__menu__item" data-item="contact">Contact</div>
+          </li>
         </ul>
+        <!-- <ul class="header__menu">
+          <li>
+            <a class="header__menu__item active" data-item="home" href="#home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="header__menu__item" data-item="about" href="#about"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="header__menu__item" data-item="skills" href="#skills"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a class="header__menu__item" data-item="work" href="#work"
+              >My work</a
+            >
+          </li>
+          <li>
+            <a
+              class="header__menu__item"
+              data-item="testimonial"
+              href="#testimonial"
+              >Testimonial</a
+            >
+          </li>
+          <li>
+            <a class="header__menu__item" data-item="contact" href="#contact"
+              >Contact</a
+            >
+          </li>
+        </ul> -->
       </nav>
       <button class="header__toggle" aria-label="navigation menu toggle">
         <i class="fa-solid fa-bars"></i>
