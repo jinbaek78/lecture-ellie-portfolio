@@ -145,11 +145,34 @@ button:focus {
 }
 /* home */
 #home {
+  position: relative;
   background-color: var(--color-primary);
   color: var(--color-text);
   padding: 5rem 1rem;
   padding-top: 7rem;
   text-align: center;
+}
+
+.custom-shape-divider-bottom-1711087667 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1711087667 svg {
+  position: relative;
+  display: block;
+  width: calc(120% + 1.3px);
+  height: 68px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1711087667 .shape-fill {
+  fill: var(--color-white);
 }
 
 .home__avatar {
@@ -518,9 +541,12 @@ button:focus {
   .header__nav {
     width: 100%;
   }
-
   #home {
     padding-bottom: 3rem;
+  }
+
+  .section__container {
+    background-color: var(--color-primary);
   }
 
   .home__title {
