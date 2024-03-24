@@ -309,8 +309,13 @@ button:focus {
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
+.skills__title {
+  color: var(--color-accent);
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
 .skills__coding {
-  -row: span 2;
+  grid-row: span 2;
   padding: 1rem;
   background-color: var(--color-primary);
 }
