@@ -521,8 +521,8 @@ button:focus {
 .arrow-up {
   background-color: var(--color-primary);
   position: fixed;
-  bottom: 3rem;
-  right: 3rem;
+  bottom: 5rem;
+  right: 1rem;
   font-size: 3rem;
   width: 4.5rem;
   height: 4.5rem;
@@ -679,5 +679,6 @@ button:focus {
     height: 3rem;
     bottom: 1.5rem;
     right: 1.5rem;
+    right: 5.5rem;
   }
 }
