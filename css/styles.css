@@ -607,11 +607,27 @@ button:focus {
 
   #home {
     padding-bottom: 3rem;
+    transform: translateY(-100px);
+  }
+
+  .home__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home__descriptions {
+    margin-top: 6rem;
+    font-size: 1rem;
+  }
+
+  .home__avatar {
+    width: 300px;
+    height: 300px;
   }
 
   .home__title {
     font-size: 2.5rem;
-    /* margin-bottom: 0.5rem; */
+    font-size: 2.2rem;
   }
 
   .majors {
